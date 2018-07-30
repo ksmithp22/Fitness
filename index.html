@@ -1,0 +1,299 @@
+<html>
+<style>
+
+body{
+  margin: 0;
+  padding: 0;
+}
+#no-judgments img {
+  width: 100%;
+  min-height: 300px;
+}
+.content-box {
+  width: 100%;
+  margin: 0 auto;
+  visibility: hidden;
+  position: absolute;
+  background-color: #BDAEC6;
+}
+#time {
+  line-height: 1.9;
+}
+#classes {
+  line-height: 1.9;
+}
+.inner {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #BDAEC6;
+}
+.section {
+  width: 100%;
+}
+#container {
+  position: relative;
+}
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #BDAEC6;
+  color: white;
+  margin: 0 auto;
+  margin: 0;
+}
+footer a {
+  width: 25%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+footer a:active {
+  transform: translateY(2px);
+}
+#flex {
+  display: flex;
+  justify-content: space-around;
+}
+#category h2{
+  color: #732C7B;
+}
+#body-page {
+  background-color: #732C7B;
+  min-height: 300px;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+
+}
+#logo-page{
+ background-color: #421C52;
+ min-height: 400px;
+}
+ .row{
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+}
+#title{
+  width: 100%;
+}
+#headphones{
+  width: 45%;
+}
+#heartbeat {
+  width: 45%;
+}
+#arrows{
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bodypic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#legInfo{
+  position: absolute;
+  top: 500px;
+  left: 750px;
+}
+#armInfo{
+position: absolute;
+top: 150px;
+left: 50px;
+}
+#selectLeg {
+position: absolute;
+width: 100px;
+height: 250px;
+top: 400px;
+left: 600px;
+
+}
+#selectArm {
+position: absolute;
+width:120px;
+height: 250px;
+top: 200px;
+left: 470px;
+}
+#select a {
+  width: 50%;
+  background-color: pink;
+}
+#selct a:active{
+  transform:translateY(2px);
+}
+</style>
+<div id="container">
+  <div class="section" id="logo-page">
+    <div>
+    <img src="Logo.jpg" id="title"> </img>
+    <div class="row">
+    <img src="Image1-07.png" id="heartbeat"> </img>
+    <img src="Image3-09.png" id="headphones"> </img>
+    </div>
+    <div class="row">
+      <img src="Yoga2.png" id="left-wrapped-image">
+    <h4 style="color:white";>
+    No judgments means room for everyone, regardless of shape, size, age, race, gender or fitness level.
+    No matter your workout of choice, we want you to feel good while reaching your goals.
+    </h4>
+    </div>
+    </div>
+    <a href="#body-page">
+      <img src="Arrows.jpg" id="arrows">
+    </a>
+  </div>
+  <div class="section" id="body-page">
+    <ul style="list-style-type: circle">
+      <li> Click on the body part </li>
+      <li> The black part shows the specific body part's instructions. </li>
+    </ul>
+      <img src="body.png" id="bodypic"> </img>
+      <a href="#no-judgments">
+        <img src="Arrows.jpg" id="arrows">
+      </a>
+        <div id="selectArm" onclick="selectArm()">
+        </div>
+        <div id="arm">
+          <div id="armInfo">
+            <ul>
+              <li> Close-Grip Barbell Bench Press. 3 sets, 4-6 reps. </li>
+              <li> Cable Rope Overhead Triceps Extension. 2 sets, 8-12 reps.</li>
+              <li> Triceps Pushdown. 2 sets, 15 reps. </li>
+              <li> Barbell Curl. 3 sets, 4-6 reps. </li>
+              <li>  Dumbbell Alternate Bicep Curl. 2 sets, 8-12 reps. </li>
+              <li> Standing Biceps Cable Curl.</li>
+              <li> Palms-Down Wrist Curl Over A Bench. </li>
+            </ul>
+          </div>
+        </div>
+        <div id="selectLeg" onclick="selectLeg()">
+        </div>
+        <div id="leg">
+          <div id="legInfo">
+            <ul>
+              <li> Barbell Squat. 4 sets, 4-6 reps. </li>
+              <li> Dumbbell Lunges. 4 sets, 12 reps each leg.</li>
+              <li> Leg Press. 3 sets, 12-15 reps. </li>
+              <li> Lying Leg Curls. 3 sets, 12 reps.</li>
+              <li> Leg Extensions. 3 sets, 20 reps. </li>
+              <li> Standing Calf Raises. 4 sets, 12 reps.</li>
+            </ul>
+          </div>
+        </div>
+  </div>
+  <div class="section" id="no-judgments">
+    <img src="yoga_cropped.png"> </img>
+  </div>
+</div>
+
+<footer id="buttons">
+  <div id="flex">
+  <a onclick="showCategory()"> Category</a>
+  <a onclick="showInstructor()"> Instructors </a>
+  <a onclick="showClasses()"> Classes </a>
+  <a onclick="showTime()"> Time </a>
+</div>
+<div class="content-box" id="category">
+  <div class="inner">
+    <h2> <img src="Fire.png" width="45px" height="45px"> </img> Mind body burn </h2>
+    <p> Restore, rest and refresh.</p>
+    <p> We promise it will be fun!</p>
+    <h2> <img src="Glove.png" width="45px" height="45px"> </img> Action Sports </h2>
+    <p> Get ready to muscle up for a full-blown body workout that will get you pumped, in the sweaty spirit and totally wanting more!</p>
+    <h2> <img src="Bike.png" width="45px" height="45px"> </img> The ride </h2>
+    <p> Are you ready for the ride of your life? We got something for however you want to spin, so saddle up and get those wheels turning!</p>
+    <h2> <img src="Weight.png" width="45px" height="45px"> </img> Chisel it </h2>
+    <p> It is a real party for your muscles! Shape, tone, sculpt and chisel your way through a transformative body experience.</p>
+    <h2> <img src="Disco.png" width="45px" height="45px"> </img> Cardio and dance </h2>
+    <p> Get grooving and moving as you follow the beat and feel the burn. Come channel your inner dance star.</p>
+  </div>
+</div>
+<div class="content-box" id="instructor">
+  <div class="inner">
+      <p> William Smith </p>
+      <p> Bella Johnson </p>
+      <p> Kristen Thompson </p>
+      <p> Samuel Gomez </p>
+  </div>
+</div>
+<div class="content-box" id="classes">
+  <div class="inner">
+    <p> Mondays through Fridays: cardio, action sports, the ride, chisel it, and cardio and dance are available. </p>
+    <p> Saturdays: cardio, action sports, and the ride are available. </p>
+    <p> Sundays: hisel it, and cardio and dance are available. </p>
+  </div>
+</div>
+  <div class="content-box" id="time">
+    <div class="inner">
+      <p> Mondays through Fridays: classes are available from 8:30am-5:00pm </p>
+      <p> Saturdays: classes are from 10:00am-6:30pm </p>
+      <p> Sundays: classes are from 1:00pm-4:00pm </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+var category = document.getElementById("category");
+var instructor = document.getElementById("instructor");
+var classes = document.getElementById("classes");
+var time = document.getElementById("time");
+function showCategory(){
+  category.style.visibility = "visible";
+  instructor.style.visibility = "hidden";
+  classes.style.visibility = "hidden";
+  time.style.visibility = "hidden";
+  category.style.transform = "";
+}
+function showInstructor(){
+  category.style.visibility = "hidden";
+  instructor.style.transform = "";
+  instructor.style.visibility = "visible";
+  classes.style.visibility = "hidden";
+  time.style.visibility = "hidden";
+  category.style.transform = "translateY(-100%)";
+}
+function showClasses(){
+  category.style.visibility = "hidden";
+  instructor.style.visibility = "hidden";
+  classes.style.visibility = "visible";
+  classes.style.transform = "";
+  time.style.visibility = "hidden";
+}
+function showTime(){
+  category.style.visibility = "hidden";
+  instructor.style.visibility = "hidden";
+  classes.style.visibility = "hidden";
+  time.style.visibility = "visible";
+  time.style.transform = "";
+}
+category.style.transform = "translateY(-100%)";
+instructor.style.transform = "translateY(-100%)";
+classes.style.transform = "translateY(-100%)";
+time.style.transform = "translateY(-100%)";
+
+var arm = document.getElementById("arm");
+var leg = document.getElementById("leg");
+function selectArm() {
+  arm.style.visibility = "visible";
+  leg.style.visibility = "hidden";
+}
+function selectLeg() {
+  leg.style.visibility = "visible";
+  arm.style.visibility = "hidden";
+}
+
+leg.style.visibility = "hidden";
+arm.style.visibility = "hidden";
+
+</script>
+</html>
